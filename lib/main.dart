@@ -50,86 +50,88 @@ class _MyHomePageState extends State<MyHomePage> {
           IconButton(onPressed: () {}, icon: Icon(Icons.phone)),
         ],
       ),
-      body: Container(
-        padding: EdgeInsets.all(10),
-        color: Color.fromARGB(1, 254, 247, 255),
-        child: Center(
-          child: Column(
-            children: [
-              Container(
-                child: Column(
-                  //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    CircleAvatar(
-                      radius: 85,
-                      child: Icon(
-                        Icons.icecream_outlined,
-                        size: 85,
+      body: SingleChildScrollView(
+        child: Container(
+          padding: EdgeInsets.all(10),
+          color: Color.fromARGB(1, 254, 247, 255),
+          child: Center(
+            child: Column(
+              children: [
+                Container(
+                  child: Column(
+                    //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      CircleAvatar(
+                        radius: 85,
+                        child: Icon(
+                          Icons.icecream_outlined,
+                          size: 85,
+                        ),
                       ),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Text(
-                      'Ice cream is very delicious right?',
-                      style:
-                          TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
-                    )
-                  ],
-                ),
-              ),
-              SizedBox(
-                height: 40,
-              ),
-              Container(
-                child: Column(
-                  //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    CircleAvatar(
-                      radius: 85,
-                      child: Icon(
-                        Icons.code,
-                        size: 85,
+                      SizedBox(
+                        height: 10,
                       ),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Text(
-                      'Programming is not boring if you love it',
-                      style:
-                          TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
-                    )
-                  ],
+                      Text(
+                        'Ice cream is very delicious right?',
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.w600),
+                      )
+                    ],
+                  ),
                 ),
-              ),
-              SizedBox(
-                height: 40,
-              ),
-              Container(
-                //margin: EdgeInsets.only(top: 10),
-                child: Column(
-                  children: [
-                    CircleAvatar(
-                      radius: 85,
-                      child: Icon(
-                        Icons.egg_outlined,
-                        size: 85,
+                SizedBox(
+                  height: 40,
+                ),
+                Container(
+                  child: Column(
+                    //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      CircleAvatar(
+                        radius: 85,
+                        child: Icon(
+                          Icons.code,
+                          size: 85,
+                        ),
                       ),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Text(
-                      'if you submit code directly copy from chatgpt then mark will 0',
-                      style:
-                          TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
-                      textAlign: TextAlign.start,
-                    )
-                  ],
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Text(
+                        'Programming is not boring if you love it',
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.w600),
+                      )
+                    ],
+                  ),
                 ),
-              ),
-            ],
+                SizedBox(
+                  height: 40,
+                ),
+                Container(
+                  //margin: EdgeInsets.only(top: 10),
+                  child: Column(
+                    children: [
+                      CircleAvatar(
+                        radius: 85,
+                        child: Icon(
+                          Icons.egg_outlined,
+                          size: 85,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Text(
+                        'if you submit code directly copy from chatgpt then mark will 0',
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.w600),
+                        textAlign: TextAlign.start,
+                      )
+                    ],
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),
